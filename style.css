@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    font-family: sans-serif;
+    min-height: 100vh;
+    font-weight: 300;
+    display: grid;
+    justify-content: center;
+    padding: 3em 0;
+    background-image: url("https://backend.quadient.com/files/default/styles/blog/public/2022-07/connecting-the-dots-of-the-2021-aspire-ccm-leaderboard-rendering-enginescloud.jpg?itok=YEDIP5lC");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.main_title{
+    font-size: 1.5em;
+    width: 150%;
+    color: rgb(184, 19, 19);
+}
+
+.main_form{
+    display: grid;
+    gap: .6em;
+    justify-items: center;
+}
+
+input{
+    all: unset;
+    padding: .5em .8em;
+    width: 80%;
+    border: 1px solid rgb(163,196,243);
+    text-align: start;
+    color: honeydew;
+}
+
+input:focus{
+    border: 3px solid grey;
+}
+
+.main_error-prompter{
+    color: #ff7864;
+    font-weight: 700;
+    font-size: 1em;
+    display: none;
+}
+
+button:not(.main_form-submit-btn){
+    all: unset;
+    border-radius: 50%;
+    background: rgb(255,153,200);
+    width: 60px;
+    height: 60px;
+    transition: all .5s ease;
+}
+
+.main_form-submit-btn{
+    all: unset;
+    width: 10em;
+    background: rgb(255,0,0);
+    padding: .7em 0;
+    transition: all .5s ease;
+    border-radius: 15px;
+}
+
+.main_form-submit-btn:hover {
+    background-color: skyblue;
+    cursor: pointer;
+    color: white;
+    border: 0.5px solid darkblue;
+}
+
+button:active{
+    transform: scale(.95) translateY(5px);
+    filter: brightness(.9);
+}
+
+button:hover{
+    background-color: rgb(0,119,182);
+}
+
+.main_scoreboard-wrapper{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    gap: 1em;
+
+}
+
+.main_scoreboard{
+    display: grid;
+    justify-items: center;
+    gap: .3em;
+    width: 90%;
+    background: rgb(254,228,64);
+    text-transform: uppercase;
+    padding: 1em 0;
+    border-radius: 80px;
+}
+
+.main_player-name{
+    font-weight: 400;
+}
+
+.main_time-stamp{
+    color: #686868;
+    font-size: .8em;
+}
+
+.main_scoreboard-btn-container{
+    margin: 1em;
+    display: flex;
+    gap: .5em;
+}
+
+@media (min-width:35.25em){
+    .main_title{
+        font-size: 2.5rem;
+        font-weight: 500;
+        font-variant: small-caps;
+    }
+
+    .main_form{
+        display: flex;
+    }
+
+    .main_scoreboard{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    input{
+        width: 10em;
+    }
+
+}
